@@ -1,3 +1,6 @@
+#LIO-SAM Modifiled for ROS2GO system 
+针对ROS2GO系统下的ubuntu20.04的简单修改
+ 
 # LIO-SAM
 
 **A real-time lidar-inertial odometry package. We strongly recommend the users read this document thoroughly and test the package with the provided dataset first. A video of the demonstration of the method can be found on [YouTube](https://www.youtube.com/watch?v=A0H8CoORZJU).**
