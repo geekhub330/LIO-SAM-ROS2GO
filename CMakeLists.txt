@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 2.8.3)
 project(lio_sam)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -pthread")
 
 find_package(catkin REQUIRED COMPONENTS
   tf
   roscpp
   rospy
-  cv_bridge
+  #cv_bridge
   # pcl library
   pcl_conversions
   # msgs
@@ -20,10 +20,10 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   visualization_msgs
 )
-
+#set(OpenCV_INCLUDE_DIRS /usr/local/opencv3.4/include)
 find_package(OpenMP REQUIRED)
 find_package(PCL REQUIRED QUIET)
-find_package(OpenCV REQUIRED QUIET)
+find_package(OpenCV REQUIRED)
 find_package(GTSAM REQUIRED QUIET)
 find_package(Boost REQUIRED COMPONENTS timer)
 
