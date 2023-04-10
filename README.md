@@ -7,8 +7,12 @@
 ## Dependency
 
 
-- [gtsam]
-  gtsam-4.0.3
+- [gtsam-4.0.3]
+git clone -b 4.0.3 https://github.com/borglab/gtsam.git
+cd gtsam
+mkdir build & cd build
+cmake ..
+sudo make install
 
 ## Install
 
